@@ -22,11 +22,14 @@ public class Usuario implements Serializable {
     private String nome;
     private String numero;
     private String cpf;
-    private Email email;
+
+    @Email
+    private String email;
+
     private Date data_nasc;
     private String senha;
 
-
+    @ManyToOne
     @JoinColumn(name = "endereco_id", referencedColumnName = "id")
     private Endereco endereco;
 }

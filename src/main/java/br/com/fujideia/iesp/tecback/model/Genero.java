@@ -18,6 +18,4 @@ public class Genero {
     private Integer id;
 
     private String titulo;
-
-
 }

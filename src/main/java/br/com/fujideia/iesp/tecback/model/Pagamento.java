@@ -22,6 +22,7 @@ public class Pagamento implements Serializable {
     private String boleto;
     private String gift_card;
 
+    @OneToOne
     @JoinColumn(name = "cartao_id", referencedColumnName = "id")
     private Cartao cartao;
 

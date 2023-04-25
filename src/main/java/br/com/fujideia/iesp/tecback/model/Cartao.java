@@ -28,6 +28,7 @@ public class Cartao implements Serializable {
     @Column(length = 3)
     private Integer cvc;
 
+    @OneToOne
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     private Usuario usuario;
 }

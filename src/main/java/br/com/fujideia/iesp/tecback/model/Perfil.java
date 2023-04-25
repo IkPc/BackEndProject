@@ -19,9 +19,11 @@ public class Perfil implements Serializable {
 
     private String nome;
 
+    @ManyToOne
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     private Usuario usuario;
 
+    @OneToOne
     @JoinColumn(name = "endereco_id", referencedColumnName = "id")
     private Endereco endereco;
 }

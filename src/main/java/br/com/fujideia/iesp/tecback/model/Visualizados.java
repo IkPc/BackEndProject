@@ -14,11 +14,13 @@ public class Visualizados {
     @Column(nullable = false)
     private Integer id;
 
+    @ManyToOne
     @JoinColumn
     private Filme filme;{
         int min_atual;
     }
 
+    @ManyToOne
     @JoinColumn
     private Series series;{
         int min_atual;

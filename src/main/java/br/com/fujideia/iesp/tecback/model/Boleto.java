@@ -22,9 +22,11 @@ public class Boleto implements Serializable {
 
     private Date vencimento;
 
+    @ManyToOne
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     private Usuario usuario;
 
+    @OneToOne
     @JoinColumn(name = "pagamento_id", referencedColumnName = "id")
     private Pagamento pagamento;
 }

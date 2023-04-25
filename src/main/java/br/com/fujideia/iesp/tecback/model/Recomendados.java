@@ -18,9 +18,11 @@ public class Recomendados {
 
     private Date data;
 
+    @ManyToOne
    @JoinColumn
     private Filme filme;
 
+    @ManyToOne
    @JoinColumn
     private Series series;
 
