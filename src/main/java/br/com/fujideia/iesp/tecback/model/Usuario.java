@@ -33,3 +33,5 @@ public class Usuario implements Serializable {
     @JoinColumn(name = "endereco_id", referencedColumnName = "id")
     private Endereco endereco;
 }
+
+//tabela do usuario onde estão suas informações pessoais.

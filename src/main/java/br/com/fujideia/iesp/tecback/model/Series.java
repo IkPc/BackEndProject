@@ -39,3 +39,5 @@ public class Series implements Serializable {
     private Genero genero;
 
 }
+
+//tabela onde estão as series que podem ser inseridas e então visualizadas por usuarios.

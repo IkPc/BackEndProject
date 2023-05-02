@@ -30,3 +30,5 @@ public class Boleto implements Serializable {
     @JoinColumn(name = "pagamento_id", referencedColumnName = "id")
     private Pagamento pagamento;
 }
+
+//tabela de boleto referente a um tipo de pagamento.

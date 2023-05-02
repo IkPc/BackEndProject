@@ -22,7 +22,6 @@ public class Cartao implements Serializable {
 
     private Integer numero;
 
-    @Column
     private Date vencimento;
 
     @Column(length = 3)
@@ -32,3 +31,6 @@ public class Cartao implements Serializable {
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     private Usuario usuario;
 }
+
+//tabela de cartão referente a um tipo de pagamento(com informações
+// sobre o usuario e o cartão) como uma forma de pagamento.

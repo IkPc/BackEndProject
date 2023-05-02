@@ -27,3 +27,5 @@ public class Pagamento implements Serializable {
     private Cartao cartao;
 
 }
+
+//tabela sobre a forma de pagamento escolhida pelo usuario.

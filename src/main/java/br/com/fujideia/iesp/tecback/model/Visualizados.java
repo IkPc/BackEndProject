@@ -28,3 +28,7 @@ public class Visualizados {
 
 
 }
+
+
+//tabela qual é utilizada pela tabela "recomendados" para analisar os
+// filmes/series assistidos por cada usuario.

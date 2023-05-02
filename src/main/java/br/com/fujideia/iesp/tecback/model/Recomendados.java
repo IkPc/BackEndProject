@@ -27,3 +27,6 @@ public class Recomendados {
     private Series series;
 
 }
+
+//tabela onde a netflix filtra o conteudo assistido pelo usuario onde ele analisa os generos
+//mais frequentes e manda um filme/serie de genero parecido.

@@ -27,6 +27,7 @@ public class Filme implements Serializable {
 
     private String legenda;
 
+    @Column
     public int min_atual;
 
     @Column(name = "ds_sinopse", length = 500)
@@ -36,3 +37,5 @@ public class Filme implements Serializable {
     @JoinColumn(name = "genero_id", referencedColumnName = "id")
     private Genero genero;
 }
+
+//tabela na qual são adicionados filmes com suas informações são escritas e o usuario pode visualizar.

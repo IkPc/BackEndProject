@@ -19,6 +19,9 @@ public class Endereco implements Serializable {
 
     private String nome;
 
+    //coluna para que seja descrito o endereço (rua, numero, etc.)
     @Column(name = "ds_endereco", length = 500)
     private String endereco;
 }
+
+//tabela referente ao endereço que envia fatura e localiza o usuario que possui cadastro na netflix.

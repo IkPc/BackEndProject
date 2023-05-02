@@ -19,3 +19,5 @@ public class Genero {
 
     private String titulo;
 }
+
+//genero dos filmes ou séries.

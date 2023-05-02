@@ -26,3 +26,5 @@ public class Planos implements Serializable {
 
     private int cvc;
 }
+
+//tabela onde estão os planos que o usuario pode escolher para então prosseguir para tabela de forma de pagamento.

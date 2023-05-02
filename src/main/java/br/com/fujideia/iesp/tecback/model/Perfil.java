@@ -27,3 +27,5 @@ public class Perfil implements Serializable {
     @JoinColumn(name = "endereco_id", referencedColumnName = "id")
     private Endereco endereco;
 }
+
+//tabela dos perfis alteraveis do usuario, onde ele pode possuir vários (de acordo com seu plano).
