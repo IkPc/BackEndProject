@@ -2,6 +2,8 @@ package br.com.fujideia.iesp.tecback.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,19 +21,35 @@ public class Usuario implements Serializable {
     @Column(nullable = false)
     private Integer id;
 
+
     private String nome;
     private String numero;
     private String cpf;
 
-    @Email
+    @NotNull
+    @Column(unique = true)
+    private String login;
+
+    @Email @NotEmpty
     private String email;
 
+    @NotNull
     private Date data_nasc;
+
+    @NotNull
     private String senha;
 
     @ManyToOne
     @JoinColumn(name = "endereco_id", referencedColumnName = "id")
     private Endereco endereco;
+
+    @ManyToOne
+    @JoinColumn(name = "visualizados_id", referencedColumnName = "id")
+    private Visualizados visualizados;
+
+    @ManyToOne
+    @JoinColumn(name = "recomendados_id", referencedColumnName = "id")
+    private Recomendados recomendados;
 }
 
 //tabela do usuario onde estão suas informações pessoais.
