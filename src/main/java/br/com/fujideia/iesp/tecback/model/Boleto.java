@@ -22,6 +22,8 @@ public class Boleto implements Serializable {
 
     private Date vencimento;
 
+    private Usuario Nome;
+
     @ManyToOne
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     private Usuario usuario;

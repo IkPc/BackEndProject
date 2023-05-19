@@ -1,5 +1,7 @@
-package br.com.fujideia.iesp.tecback.model;
+package br.com.fujideia.iesp.tecback.model.DTO;
 
+import br.com.fujideia.iesp.tecback.model.Cartao;
+import br.com.fujideia.iesp.tecback.model.Usuario;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,7 +13,7 @@ import java.util.Date;
 @Setter
 @Entity
 @Table(name = "tb_cartao")
-public class Cartao implements Serializable {
+public class CartaoDTO implements Serializable {
 
     @Id
     @GeneratedValue
@@ -24,11 +26,10 @@ public class Cartao implements Serializable {
 
     private Date vencimento;
 
-    private Integer cvc;
-
+    @Column(length = 3)
     @OneToOne
-    @JoinColumn(name = "usuario_id", referencedColumnName = "id")
-    private Usuario usuario;
+    @JoinColumn
+    private Cartao cvc;
 }
 
 //tabela de cartão referente a um tipo de pagamento(com informações

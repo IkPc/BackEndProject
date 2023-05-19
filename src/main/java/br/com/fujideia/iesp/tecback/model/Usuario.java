@@ -21,10 +21,14 @@ public class Usuario implements Serializable {
     @Column(nullable = false)
     private Integer id;
 
-
     private String nome;
+
+    @Column(length = 11)
     private String numero;
-    private String cpf;
+
+    //apenas os números
+    @Column(length = 11)
+    private Integer cpf;
 
     @NotNull
     @Column(unique = true)
