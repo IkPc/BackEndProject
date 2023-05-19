@@ -19,13 +19,15 @@ public class Pagamento implements Serializable {
     private Integer id;
     private String pix;
     private Date data_venc;
-    private String boleto;
     private String gift_card;
 
     @OneToOne
     @JoinColumn(name = "cartao_id", referencedColumnName = "id")
     private Cartao cartao;
 
+    @OneToOne
+    @JoinColumn(name = "boleto_id", referencedColumnName = "id")
+    private Boleto boleto;
 }
 
 //tabela sobre a forma de pagamento escolhida pelo usuario.

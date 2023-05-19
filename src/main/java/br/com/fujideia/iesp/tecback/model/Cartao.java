@@ -1,5 +1,6 @@
 package br.com.fujideia.iesp.tecback.model;
 
+import br.com.fujideia.iesp.tecback.model.DTO.CartaoDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,7 +25,7 @@ public class Cartao implements Serializable {
 
     private Date vencimento;
 
-    private Integer cvc;
+    private CartaoDTO cvc;
 
     @OneToOne
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")

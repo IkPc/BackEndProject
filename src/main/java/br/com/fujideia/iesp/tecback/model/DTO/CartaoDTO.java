@@ -19,17 +19,11 @@ public class CartaoDTO implements Serializable {
     @GeneratedValue
     @Column(nullable = false)
     private Integer id;
-
     private String nome;
-
     private Integer numero;
-
     private Date vencimento;
-
     @Column(length = 3)
-    @OneToOne
-    @JoinColumn
-    private Cartao cvc;
+    private Integer cvc;
 }
 
 //tabela de cartão referente a um tipo de pagamento(com informações
