@@ -1,22 +1,16 @@
-package br.com.fujideia.iesp.tecback.model;
+package br.com.fujideia.iesp.tecback.model.DTO;
 
-import br.com.fujideia.iesp.tecback.model.DTO.EnderecoDTO;
 import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
 
-@Getter
-@Setter
-@Entity
-@Table(name = "tb_endereco")
-public class Endereco implements Serializable {
-
-    @Id
-    @GeneratedValue
-    @Column(nullable = false)
-    private Integer id;
+@Builder
+@Data
+public class EnderecoDTO implements Serializable {
 
     //coluna para que seja descrito o endereço (rua, numero, etc.)
     @Column(name = "ds_endereco", length = 500)

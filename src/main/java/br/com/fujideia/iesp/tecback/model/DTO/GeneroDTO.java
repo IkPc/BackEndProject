@@ -1,22 +1,17 @@
-package br.com.fujideia.iesp.tecback.model;
+package br.com.fujideia.iesp.tecback.model.DTO;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
-@Entity
-@Table(name = "tb_genero")
-public class Genero {
-
-    @Id
-    @Column(nullable = false)
-    private Integer id;
-
+@Builder
+@Data
+public class GeneroDTO {
     private String titulo;
 }
 

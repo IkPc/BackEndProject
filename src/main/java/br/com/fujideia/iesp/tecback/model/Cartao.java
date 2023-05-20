@@ -25,7 +25,8 @@ public class Cartao implements Serializable {
 
     private Date vencimento;
 
-    private CartaoDTO cvc;
+    @Column(length = 3)
+    private Integer cvc;
 
     @OneToOne
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
