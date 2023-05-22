@@ -4,8 +4,6 @@ import br.com.fujideia.iesp.tecback.model.Genero;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 
@@ -14,15 +12,9 @@ import java.io.Serializable;
 public class FilmeDTO implements Serializable {
 
     private String titulo;
-
     private int classe_indicativa;
-
     private String diretor;
-
-    private String idioma;
-
-    private String legenda;
-
+    private Genero Title;
     @Column(name = "ds_sinopse", length = 500)
     private String sinopse;
 }

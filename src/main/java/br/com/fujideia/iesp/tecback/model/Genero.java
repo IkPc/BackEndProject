@@ -17,7 +17,7 @@ public class Genero {
     @Column(nullable = false)
     private Integer id;
 
-    private String titulo;
+    private String Title;
 }
 
 //genero dos filmes e séries.
