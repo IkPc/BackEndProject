@@ -23,7 +23,7 @@ public class Recomendados {
    @JoinColumn
     private Series series;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn
     private Usuario usuario;
 }

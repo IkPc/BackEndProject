@@ -15,7 +15,7 @@ import java.util.Objects;
 @Service
 public class FilmeService {
     @Autowired
-    private FilmeRepository repository;
+    public FilmeRepository repository;
 
     public Filme salvar(Filme filme){
         filme = repository.save(filme);
