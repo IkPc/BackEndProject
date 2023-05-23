@@ -27,7 +27,7 @@ public class Filme implements Serializable {
 
     private String legenda;
 
-    @Column
+    //dado em segundos
     public int min_atual;
 
     @Column(name = "ds_sinopse", length = 500)

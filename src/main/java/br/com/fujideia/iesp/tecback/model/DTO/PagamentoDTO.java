@@ -5,13 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
 
 @Builder
 @Data
 public class PagamentoDTO implements Serializable {
 
-    private Date data_venc;
+    private Pagamento data_venc;
     private Pagamento id;
 }
 

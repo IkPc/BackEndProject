@@ -16,15 +16,8 @@ public class Planos implements Serializable {
     @GeneratedValue
     @Column(nullable = false)
     private Integer id;
-
     private String nome;
-    private String numero;
-    private String cpf;
-
-    @Column(name = "ds_endereco", length = 500)
-    private String endereco;
-
-    private int cvc;
+    private Float valor;
 }
 
 //tabela onde estão os planos que o usuario pode escolher para então prosseguir para tabela de forma de pagamento.

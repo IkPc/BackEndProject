@@ -1,18 +1,18 @@
 package br.com.fujideia.iesp.tecback.model.DTO;
 
+import br.com.fujideia.iesp.tecback.model.Cartao;
 import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
 
 @Builder
 @Data
 public class CartaoDTO implements Serializable {
 
-    private String nome;
-    private Integer numero;
-    private Date vencimento;
+    private Cartao nome;
+    private Cartao numero;
+    private Cartao vencimento;
 
     private Integer cvc;
 }

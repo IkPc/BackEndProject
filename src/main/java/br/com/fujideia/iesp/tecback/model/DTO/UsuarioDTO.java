@@ -1,6 +1,5 @@
 package br.com.fujideia.iesp.tecback.model.DTO;
 
-import br.com.fujideia.iesp.tecback.model.Boleto;
 import br.com.fujideia.iesp.tecback.model.Usuario;
 import lombok.Builder;
 import lombok.Data;
@@ -9,11 +8,11 @@ import java.io.Serializable;
 
 @Builder
 @Data
-public class BoletoDTO implements Serializable {
+public class UsuarioDTO implements Serializable {
 
-    private Boleto cod_de_barra;
-    private Boleto vencimento;
     private Usuario nome;
+    private Usuario login;
+    private Usuario senha;
 }
 
-//tabela de boleto referente a um tipo de pagamento.
+//tabela do usuario onde estão suas informações pessoais.

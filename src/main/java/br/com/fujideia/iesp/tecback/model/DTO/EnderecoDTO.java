@@ -1,6 +1,6 @@
 package br.com.fujideia.iesp.tecback.model.DTO;
 
-import jakarta.persistence.*;
+import br.com.fujideia.iesp.tecback.model.Endereco;
 import lombok.Builder;
 import lombok.Data;
 
@@ -11,8 +11,7 @@ import java.io.Serializable;
 public class EnderecoDTO implements Serializable {
 
     //coluna para que seja descrito o endereço (rua, numero, etc.)
-    @Column(name = "ds_endereco", length = 500)
-    private String endereco;
+    private Endereco endereco;
 }
 
 //tabela referente ao endereço que envia fatura e localiza o usuario que possui cadastro na netflix.

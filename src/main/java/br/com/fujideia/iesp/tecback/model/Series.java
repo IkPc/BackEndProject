@@ -29,6 +29,7 @@ public class Series implements Serializable {
 
     private int episodios;
 
+    //dado em segundos
     public int min_atual;
 
     @Column(name = "ds_sinopse", length = 500)
